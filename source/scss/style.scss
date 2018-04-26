@@ -1,0 +1,76 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+table.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: $border;
+  border-bottom: $border;
+  border-bottom-right-radius: 6px;
+  background-color: #777;
+  box-shadow: $shadow;
+  font-family: $font;
+
+  h1 {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  button {
+    width: 80%;
+    background-color: #ccf;
+    color: #111;
+    text-align: center;
+    font-family: $font;
+    font-weight: normal;
+    font-size: 12px;
+    border: $border;
+    transition: $transition;
+    border-radius: 3px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ddf;
+      width: 85%;
+      transition: $transition;
+    }
+
+    &:active,
+    :focus {
+      outline: none;
+    }
+  }
+
+  td.label {
+    width: 80px;
+  }
+
+  td.label,
+  td.result {
+    text-align: right;
+  }
+}
+
+.clicky {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #aaf;
+  border: $border;
+  box-shadow: $shadow;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
