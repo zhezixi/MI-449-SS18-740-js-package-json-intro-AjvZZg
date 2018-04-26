@@ -9,7 +9,7 @@
     "lint:scss": "stylelint source/scss/*.scss",
     "lint:js": "standard",
     "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
-    "deploy:surge": "surge --project . --domain sassy-project.surge.sh",
+    "deploy:surge": "surge --project . --domain https://zhezixi-js-package-json-intro.surge.sh/",
     "deploy": "run-s build:* deploy:surge"
   },
   "devDependencies": {
